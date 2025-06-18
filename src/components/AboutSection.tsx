@@ -1,11 +1,6 @@
 import { motion } from 'framer-motion';
 
 const AboutSection = () => {
-  // Google Drive video link
-  const googleDriveLink = "https://drive.google.com/file/d/1ghfDF4fFjivZFP3crzUMSGftnmsII8dk/view?usp=sharing";
-  // Extract file ID for embedding
-  const fileId = "1ghfDF4fFjivZFP3crzUMSGftnmsII8dk";
-  const embedUrl = `https://drive.google.com/file/d/${fileId}/preview`;
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#1a1a2e] to-[#0c0c15] py-20">
       <div className="container mx-auto px-6">
@@ -23,34 +18,6 @@ const AboutSection = () => {
             <p className="text-white/80 mb-6">
               With 3+ years of experience in the field, I've developed a keen eye for detail and a commitment to writing maintainable, well-documented code. I stay current with the latest web technologies and best practices to ensure my work is always at the cutting edge.
             </p>
-
-            {/* Video Section - Moved up for better visibility */}
-            <div className="mb-8">
-              <h3 className="text-white text-xl font-semibold mb-4">My Introduction Video</h3>
-              <div className="relative pt-[56.25%] rounded-xl overflow-hidden shadow-2xl bg-gray-800">
-                <iframe
-                  className="absolute top-0 left-0 w-full h-full"
-                  src={embedUrl}
-                  title="My Introduction Video"
-                  frameBorder="0"
-                  allow="autoplay"
-                  allowFullScreen
-                ></iframe>
-              </div>
-              <div className="mt-3 text-center">
-                <a 
-                  href={googleDriveLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm text-gray-300 hover:text-white transition-colors"
-                >
-                  <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
-                  </svg>
-                  Download Video
-                </a>
-              </div>
-            </div>
             
             <a 
               href="/Mamikie Ronewa Maemu CV .pdf" 
