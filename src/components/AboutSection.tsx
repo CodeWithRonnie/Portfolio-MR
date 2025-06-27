@@ -13,10 +13,7 @@ const AboutSection = () => {
           >
             <h2 className="text-white text-3xl md:text-4xl font-bold mb-6">About Me</h2>
             <p className="text-white/80 mb-6">
-              I'm a passionate front-end developer with a strong foundation in creating responsive, user-friendly web applications. I specialize in translating design concepts into clean, efficient code that delivers exceptional user experiences.
-            </p>
-            <p className="text-white/80 mb-6">
-              With 3+ years of experience in the field, I've developed a keen eye for detail and a commitment to writing maintainable, well-documented code. I stay current with the latest web technologies and best practices to ensure my work is always at the cutting edge.
+              I'm a passionate front-end developer with a strong foundation in creating responsive, user-friendly web applications. I specialize in translating design concepts into clean, efficient code that delivers exceptional user experiences. I've developed a keen eye for detail and a commitment to writing maintainable, well-documented code. I stay current with the latest web technologies and best practices to ensure my work is always at the cutting edge.
             </p>
             
             <a 
