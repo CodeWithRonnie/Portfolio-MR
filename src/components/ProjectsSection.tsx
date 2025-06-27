@@ -102,13 +102,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 const ProjectsSection = () => {
   const projects = [
     {
+      title: "YouthConnect Platform",
+      description: "Empowering South African youth with job opportunities, mentorship programs, and skills development resources to build better futures.",
+      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1600&q=80",
+      tags: ["HTML", "CSS", "JavaScript", "Responsive Design"],
+      liveLink: "https://codewithronnie.github.io/YouthConnect-LandingPage/",
+      githubLink: "https://github.com/CodeWithRonnie/YouthConnect-LandingPage.git",
+      delay: 0.1
+    },
+    {
       title: "Minesweeper Game",
       description: "A classic Minesweeper game implementation with customizable difficulty levels and game statistics.",
       image: "https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1600&q=80",
       tags: ["JavaScript", "HTML", "CSS", "Game Development"],
-      liveLink: "#",
+      liveLink: "https://codewithronnie.github.io/MineSweeper/",
       githubLink: "https://github.com/CodeWithRonnie/MineSweeper.git",
-      delay: 0.1
+      delay: 0.2
     },
     {
       title: "SA ID Validator",
@@ -144,7 +153,7 @@ const ProjectsSection = () => {
       tags: ["React", "Node.js", "MongoDB", "Express", "JWT"],
       liveLink: "https://banking-frontend-j7ik.onrender.com/",
       githubLink: "https://github.com/Software-Development-Capaciti/banking-frontend.git",
-      delay: 0.5
+      delay: 0.6
     }
   ];
 

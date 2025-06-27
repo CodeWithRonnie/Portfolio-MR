@@ -63,17 +63,6 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmitSuccess }) => {
   return (
     <div className="w-full">
       <div className="container mx-auto">
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center md:text-left mb-8"
-        >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Get In Touch</h2>
-          <div className="w-20 h-1 bg-[#B83280] mx-auto mb-6"></div>
-          <p className="text-white/70 max-w-2xl mx-auto">
-            Have a question or want to work together? Feel free to reach out!
-          </p>
-        </motion.div>
 
         <motion.div 
           initial={{ opacity: 0, y: 20 }}

@@ -82,8 +82,8 @@ const ServicesSection = () => {
       delay: 0.1,
       media: {
         type: 'image' as const,
-        src: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1600&q=80',
-        alt: 'Web development code on a screen'
+        src: 'https://img.freepik.com/free-vector/app-development-illustration_52683-47931.jpg',
+        alt: 'Cartoon web development illustration'
       }
     },
     {
@@ -93,9 +93,9 @@ const ServicesSection = () => {
       buttonText: "MAKE IT RESPONSIVE",
       delay: 0.2,
       media: {
-        type: 'image' as const,
-        src: 'https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80',
-        alt: 'Responsive design across devices'
+        type: 'video' as const,
+        src: 'https://cdn.dribbble.com/users/14268/screenshots/9109669/media/2d4a9e0c9a1a9e7c8b8b9c8d7e6f5a4b/desktop-preview.mp4',
+        alt: 'Responsive design demonstration'
       }
     },
     {
