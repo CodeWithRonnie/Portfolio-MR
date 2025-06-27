@@ -123,12 +123,6 @@ const HeroSection = () => {
               CONTACT
             </Link>
           </div>
-          
-          <div className="mt-20 opacity-80">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#B83280] mx-auto animate-bounce drop-shadow-md">
-              <path d="M12 5v14M5 12l7 7 7-7"/>
-            </svg>
-          </div>
         </div>
       </div>
       
