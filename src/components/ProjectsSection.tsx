@@ -115,7 +115,7 @@ const ProjectsSection = () => {
       description: "A classic Minesweeper game implementation with customizable difficulty levels and game statistics.",
       image: "https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1600&q=80",
       tags: ["JavaScript", "HTML", "CSS", "Game Development"],
-      liveLink: "https://codewithronnie.github.io/MineSweeper/",
+      liveLink: "https://ronminesweeper.netlify.app/",
       githubLink: "https://github.com/CodeWithRonnie/MineSweeper.git",
       delay: 0.2
     },
