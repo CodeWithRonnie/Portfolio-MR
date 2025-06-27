@@ -13,6 +13,7 @@ interface ServiceCardProps {
     type: 'image' | 'video';
     src: string;
     alt: string;
+    poster?: string;
   };
 }
 
@@ -46,6 +47,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, but
                 loop 
                 muted 
                 playsInline
+                poster={media.poster}
                 className="absolute inset-0 w-full h-full object-contain p-2"
               >
                 <source src={media.src} type="video/mp4" />
@@ -95,8 +97,9 @@ const ServicesSection = () => {
       delay: 0.2,
       media: {
         type: 'video' as const,
-        src: 'https://cdn.dribbble.com/users/14268/screenshots/9109669/media/2d4a9e0c9a1a9e7c8b8b9c8d7e6f5a4b/desktop-preview.mp4',
-        alt: 'Responsive design demonstration'
+        src: 'https://assets.mixkit.co/videos/preview/mixkit-responsive-design-demo-1762-large.mp4',
+        alt: 'Responsive design demonstration',
+        poster: 'https://img.freepik.com/free-vector/responsive-web-design-concept-for-website_52683-38888.jpg'
       }
     },
     {
