@@ -85,8 +85,8 @@ const ServicesSection = () => {
       delay: 0.1,
       media: {
         type: 'image' as const,
-        src: 'https://img.freepik.com/free-vector/app-development-illustration_52683-47931.jpg',
-        alt: 'Cartoon web development illustration'
+        src: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
+        alt: 'Web development code on a screen'
       }
     },
     {
@@ -97,8 +97,8 @@ const ServicesSection = () => {
       delay: 0.2,
       media: {
         type: 'image' as const,
-        src: 'https://img.freepik.com/free-vector/responsive-design-concept-illustration_114360-6663.jpg',
-        alt: 'CSS Media Queries for responsive design'
+        src: 'https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
+        alt: 'Responsive design across multiple devices'
       }
     },
     {
@@ -109,8 +109,8 @@ const ServicesSection = () => {
       delay: 0.3,
       media: {
         type: 'image' as const,
-        src: 'https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149065783.jpg',
-        alt: 'Cartoon UI/UX design illustration'
+        src: 'https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80',
+        alt: 'UI/UX design process'
       }
     }
   ];
