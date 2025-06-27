@@ -97,8 +97,8 @@ const ServicesSection = () => {
       delay: 0.2,
       media: {
         type: 'image' as const,
-        src: 'https://img.freepik.com/free-vector/realistic-responsive-design-template_52683-82133.jpg',
-        alt: 'Responsive design across multiple devices'
+        src: 'https://img.freepik.com/free-vector/responsive-design-concept-illustration_114360-6663.jpg',
+        alt: 'CSS Media Queries for responsive design'
       }
     },
     {
