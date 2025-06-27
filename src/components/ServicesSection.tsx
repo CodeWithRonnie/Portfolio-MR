@@ -96,10 +96,9 @@ const ServicesSection = () => {
       buttonText: "MAKE IT RESPONSIVE",
       delay: 0.2,
       media: {
-        type: 'video' as const,
-        src: 'https://assets.mixkit.co/videos/preview/mixkit-responsive-design-demo-1762-large.mp4',
-        alt: 'Responsive design demonstration',
-        poster: 'https://img.freepik.com/free-vector/responsive-web-design-concept-for-website_52683-38888.jpg'
+        type: 'image' as const,
+        src: 'https://img.freepik.com/free-vector/realistic-responsive-design-template_52683-82133.jpg',
+        alt: 'Responsive design across multiple devices'
       }
     },
     {
