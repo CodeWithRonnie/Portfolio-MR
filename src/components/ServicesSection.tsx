@@ -9,15 +9,9 @@ interface ServiceCardProps {
   description: string;
   buttonText: string;
   delay: number;
-  media?: {
-    type: 'image' | 'video';
-    src: string;
-    alt: string;
-    poster?: string;
-  };
 }
 
-const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, buttonText, delay, media }) => {
+const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, buttonText, delay }) => {
   const navigate = useNavigate();
   
   const handleButtonClick = () => {
@@ -32,31 +26,6 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, but
       transition={{ duration: 0.5, delay }}
       className="border border-white/10 rounded-lg overflow-hidden h-full flex flex-col shadow-lg hover:shadow-xl transition-all duration-300 bg-[#151528] p-6"
     >
-      {media && (
-        <div className="relative mb-6 rounded-lg overflow-hidden border border-white/10">
-          <div className="relative pt-[56.25%] bg-black/20">
-            {media.type === 'image' ? (
-              <img 
-                src={media.src} 
-                alt={media.alt} 
-                className="absolute inset-0 w-full h-full object-contain p-4 opacity-90 hover:opacity-100 transition-opacity duration-300"
-              />
-            ) : (
-              <video 
-                autoPlay 
-                loop 
-                muted 
-                playsInline
-                poster={media.poster}
-                className="absolute inset-0 w-full h-full object-contain p-2"
-              >
-                <source src={media.src} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            )}
-          </div>
-        </div>
-      )}
       <div className="p-6 flex-1 flex flex-col">
         <div className="text-[#B83280] mb-4 drop-shadow-md">
           {icon}
@@ -82,12 +51,7 @@ const ServicesSection = () => {
       title: "Web Development",
       description: "Building responsive, performant websites and web applications using modern JavaScript frameworks and best practices.",
       buttonText: "START A PROJECT",
-      delay: 0.1,
-      media: {
-        type: 'image' as const,
-        src: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
-        alt: 'Web development code on a screen'
-      }
+      delay: 0.1
     },
     {
       icon: <Smartphone size={28} />,
@@ -95,11 +59,7 @@ const ServicesSection = () => {
       description: "Ensuring your website looks and functions perfectly across all devices, from desktop computers to mobile phones.",
       buttonText: "MAKE IT RESPONSIVE",
       delay: 0.2,
-      media: {
-        type: 'image' as const,
-        src: 'https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
-        alt: 'Responsive design across multiple devices'
-      }
+
     },
     {
       icon: <Palette size={28} />,
@@ -107,11 +67,7 @@ const ServicesSection = () => {
       description: "Creating visually appealing and intuitive user interfaces that enhance user experience and engagement with your product.",
       buttonText: "GET A DESIGN",
       delay: 0.3,
-      media: {
-        type: 'image' as const,
-        src: 'https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80',
-        alt: 'UI/UX design process'
-      }
+
     }
   ];
 
@@ -137,7 +93,6 @@ const ServicesSection = () => {
               description={service.description}
               buttonText={service.buttonText}
               delay={service.delay}
-              media={service.media}
             />
           ))}
         </div>
