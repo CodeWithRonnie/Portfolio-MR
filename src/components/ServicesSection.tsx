@@ -29,29 +29,30 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, but
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay }}
-      className="border border-white/10 rounded-lg overflow-hidden h-full flex flex-col shadow-lg hover:shadow-xl transition-all duration-300 bg-[#151528]"
+      className="border border-white/10 rounded-lg overflow-hidden h-full flex flex-col shadow-lg hover:shadow-xl transition-all duration-300 bg-[#151528] p-6"
     >
       {media && (
-        <div className="relative h-48 bg-black overflow-hidden">
-          {media.type === 'image' ? (
-            <img 
-              src={media.src} 
-              alt={media.alt} 
-              className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-300"
-            />
-          ) : (
-            <video 
-              autoPlay 
-              loop 
-              muted 
-              playsInline
-              className="w-full h-full object-cover"
-            >
-              <source src={media.src} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          )}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#151528] via-transparent to-transparent"></div>
+        <div className="relative mb-6 rounded-lg overflow-hidden border border-white/10">
+          <div className="relative pt-[56.25%] bg-black/20">
+            {media.type === 'image' ? (
+              <img 
+                src={media.src} 
+                alt={media.alt} 
+                className="absolute inset-0 w-full h-full object-contain p-4 opacity-90 hover:opacity-100 transition-opacity duration-300"
+              />
+            ) : (
+              <video 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                className="absolute inset-0 w-full h-full object-contain p-2"
+              >
+                <source src={media.src} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            )}
+          </div>
         </div>
       )}
       <div className="p-6 flex-1 flex flex-col">
